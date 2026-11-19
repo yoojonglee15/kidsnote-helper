@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon.svg" type="image/svg+xml" />
+  <meta name="theme-color" content="#ff7a00" />
+  <title>키즈노트 준비물·일정 정리 비서</title>
+  <style>
+    :root {
+      --bg: #f7f8fc;
+      --card: #ffffff;
+      --primary: #ff7a00;
+      --primary-soft: #fff3e6;
+      --text: #1f2430;
+      --sub: #646d82;
+      --border: #e5e8f0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Pretendard', 'Malgun Gothic', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 18px 14px 60px;
+    }
+    header {
+      background: linear-gradient(135deg, #ff8a00 0%, #ff5e00 100%);
+      color: white;
+      padding: 20px 22px;
+      border-radius: 18px;
+      box-shadow: 0 8px 22px rgba(255, 110, 0, 0.18);
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.38rem;
+      font-weight: 800;
+    }
+    header p {
+      margin: 4px 0 0;
+      font-size: 0.88rem;
+      opacity: 0.94;
+    }
+    .phone-badge {
+      background: rgba(255, 255, 255, 0.22);
+      padding: 8px 14px;
+      border-radius: 12px;
+      font-size: 0.84rem;
+      font-weight: 700;
+      cursor: pointer;
+      backdrop-filter: blur(4px);
+    }
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 18px;
+      margin-bottom: 14px;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 10px 14px;
+      border-radius: 10px;
+      border: none;
+      font-size: 0.92rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      text-decoration: none;
+    }
+    .btn-primary { background: var(--primary); color: white; }
+    .btn-primary:hover { background: #e66e00; }
+    .btn-dark { background: #232a3b; color: white; }
+    .btn-outline { background: white; color: var(--text); border: 1px solid #ccd3e0; }
+    .btn-green { background: #03c75a; color: white; }
+    .btn-blue { background: #1a73e8; color: white; }
+    .btn-sm { padding: 7px 11px; font-size: 0.82rem; border-radius: 8px; }
+    .tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .tab-btn {
+      flex: 1;
+      padding: 12px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: white;
+      font-weight: 700;
+      font-size: 0.94rem;
+      cursor: pointer;
+      color: var(--sub);
+    }
+    .tab-btn.active {
+      background: #232a3b;
+      color: white;
+      border-color: #232a3b;
+    }
+    .date-group {
+      background: white;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      margin-bottom: 14px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+    }
+    .date-header {
+      background: #f8faff;
+      padding: 13px 16px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .date-title {
+      font-weight: 800;
+      font-size: 1.04rem;
+      color: #161b26;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .event-pill {
+      background: var(--primary-soft);
+      color: #c95200;
+      padding: 3px 10px;
+      border-radius: 99px;
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+    .cal-actions {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .check-list { padding: 6px 16px; }
+    .check-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 11px 0;
+      border-bottom: 1px dashed #ebeef5;
+      gap: 10px;
+    }
+    .check-item:last-child { border-bottom: none; }
+    .check-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex: 1;
+      cursor: pointer;
+    }
+    .check-left input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      accent-color: var(--primary);
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+    .check-item.checked .item-text {
+      text-decoration: line-through;
+      color: #98a2b3;
+    }
+    .badge {
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 0.76rem;
+      font-weight: 800;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .badge-준비물 { background: #fff0db; color: #b54708; }
+    .badge-복장 { background: #e0f2fe; color: #026aa2; }
+    .badge-해야할일 { background: #fee4e2; color: #b42318; }
+    .badge-행사 { background: #dcfae6; color: #067647; }
+    .empty-box { text-align: center; padding: 34px 18px; color: var(--sub); }
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #1f2430;
+      color: white;
+      padding: 12px 22px;
+      border-radius: 99px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+      z-index: 9999;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>🎒 키즈노트 준비물·일정 정리 비서</h1>
+        <p id="syncTimeText">클라우드 자동 동기화 연결 중...</p>
+      </div>
+      <div class="phone-badge" onclick="toggleQrModal()">
+        📱 핸드폰 고정 주소 / QR코드
+      </div>
+    </header>
+
+    <!-- 핸드폰 고정 주소 QR 모달 -->
+    <div class="card" id="qrModal" style="display:none; border:2px solid #232a3b; text-align:center;">
+      <h3 style="margin:0 0 6px;">📱 평생 바뀌지 않는 내 핸드폰 고정 주소 (QR코드)</h3>
+      <p style="margin:0 0 12px; font-size:0.9rem; color:var(--sub);">
+        내 컴퓨터를 꺼놓아도 24시간 언제 어디서나 열리고, 매일 자동으로 새 알림장·공지사항이 업데이트됩니다!
+      </p>
+      <div id="qrImageBox" style="margin:10px auto;"></div>
+      <div id="qrUrlBox" style="font-weight:800; margin-bottom:12px;"></div>
+      <div style="background:#f8f9fc; padding:12px; border-radius:10px; font-size:0.86rem; text-align:left; max-width:460px; margin:0 auto 12px;">
+        💡 <b>갤럭시 바탕화면에 진짜 어플처럼 설치하기:</b><br/>
+        1. 핸드폰 카메라로 위 QR코드를 찍어 접속합니다.<br/>
+        2. 인터넷 창 메뉴(<b>三</b> 또는 <b>⋮</b>) → <b>[현재 페이지 추가] → [홈 화면]</b>(또는 <b>[홈 화면에 추가]</b>)을 누르면 바탕화면에 앱 아이콘이 생깁니다!
+      </div>
+      <button class="btn btn-dark btn-sm" onclick="toggleQrModal()">닫기</button>
+    </div>
+
+    <div class="tabs">
+      <button class="tab-btn active" id="tabBtn-checklist" onclick="switchTab('checklist')">✅ 챙길 것 체크리스트</button>
+      <button class="tab-btn" id="tabBtn-posts" onclick="switchTab('posts')">📄 요약된 원본 글 (알림장·공지)</button>
+    </div>
+
+    <!-- 탭 1: 체크리스트 -->
+    <div id="tab-checklist">
+      <div class="card" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+        <div>
+          <strong style="font-size:1.03rem;">📅 오늘부터 챙겨야 할 준비물 & 일정</strong>
+          <div style="font-size:0.84rem; color:var(--sub);">달력 버튼을 누르면 갤럭시 기본 캘린더(삼성 캘린더)와 네이버 캘린더에 바로 등록됩니다.</div>
+        </div>
+        <div style="display:flex; gap:6px; flex-wrap:wrap;">
+          <button class="btn btn-primary btn-sm" onclick="loadData(true)">🔄 새로고침</button>
+          <button class="btn btn-outline btn-sm" onclick="togglePast()" id="togglePastBtn">🕰️ 지난 날짜도 보기</button>
+          <button class="btn btn-outline btn-sm" onclick="downloadIcs(null)">📱 전체 일정 달력(.ics)</button>
+        </div>
+      </div>
+
+      <div id="checklistContainer"></div>
+    </div>
+
+    <!-- 탭 2: 원본 글 목록 -->
+    <div id="tab-posts" style="display:none;">
+      <div id="postsContainer"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toastBox"></div>
+
+  <script>
+    const PERMANENT_URL = 'https://yoojonglee15.github.io/kidsnote-helper/';
+    let rawData = { updated_at: '', items: [], posts: [] };
+    let showPast = false;
+
+    function getCheckedSet() {
+      try { return new Set(JSON.parse(localStorage.getItem('kn_checked') || '[]')); }
+      catch { return new Set(); }
+    }
+    function saveCheckedSet(s) {
+      localStorage.setItem('kn_checked', JSON.stringify(Array.from(s)));
+    }
+    function getDeletedSet() {
+      try { return new Set(JSON.parse(localStorage.getItem('kn_deleted') || '[]')); }
+      catch { return new Set(); }
+    }
+    function saveDeletedSet(s) {
+      localStorage.setItem('kn_deleted', JSON.stringify(Array.from(s)));
+    }
+
+    function showToast(msg) {
+      const el = document.getElementById('toastBox');
+      el.textContent = msg;
+      el.style.display = 'block';
+      setTimeout(() => { el.style.display = 'none'; }, 3000);
+    }
+
+    function toggleQrModal() {
+      const modal = document.getElementById('qrModal');
+      const show = modal.style.display === 'none';
+      modal.style.display = show ? 'block' : 'none';
+      if (show) {
+        const targetUrl = window.location.href.startsWith('http') && !window.location.href.includes('localhost')
+          ? window.location.href
+          : PERMANENT_URL;
+        const qrImg = 'https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=' + encodeURIComponent(targetUrl);
+        document.getElementById('qrImageBox').innerHTML =
+          `<img src="${qrImg}" alt="QR" style="width:200px;height:200px;border-radius:12px;border:1px solid #e5e8f0;padding:8px;background:white;" />`;
+        document.getElementById('qrUrlBox').innerHTML =
+          `<a href="${targetUrl}" target="_blank" style="color:#ff5e00;">${targetUrl}</a>`;
+      }
+    }
+
+    function switchTab(name) {
+      ['checklist', 'posts'].forEach(t => {
+        document.getElementById('tab-' + t).style.display = (t === name) ? 'block' : 'none';
+        document.getElementById('tabBtn-' + t).classList.toggle('active', t === name);
+      });
+    }
+
+    function togglePast() {
+      showPast = !showPast;
+      renderChecklist();
+    }
+
+    function toggleCheck(id, checked) {
+      const s = getCheckedSet();
+      if (checked) s.add(id); else s.delete(id);
+      saveCheckedSet(s);
+      renderChecklist();
+    }
+
+    function hideItem(id) {
+      const s = getDeletedSet();
+      s.add(id);
+      saveDeletedSet(s);
+      renderChecklist();
+    }
+
+    function downloadIcs(targetDate) {
+      const checkedSet = getCheckedSet();
+      const deletedSet = getDeletedSet();
+      const todayStr = new Date().toLocaleDateString('sv-SE');
+
+      const items = (rawData.items || []).filter(it => {
+        if (deletedSet.has(it.id)) return false;
+        if (targetDate) return it.target_date === targetDate;
+        return it.target_date >= todayStr && !checkedSet.has(it.id);
+      });
+
+      if (items.length === 0) {
+        showToast('달력에 추가할 일정이 없습니다.');
+        return;
+      }
+
+      const grouped = {};
+      items.forEach(it => {
+        if (!grouped[it.target_date]) grouped[it.target_date] = { titles: new Set(), list: [] };
+        if (it.event_title) grouped[it.target_date].titles.add(it.event_title);
+        grouped[it.target_date].list.push(it);
+      });
+
+      const lines = [
+        'BEGIN:VCALENDAR',
+        'VERSION:2.0',
+        'PRODID:-//KidsNote Organizer//KR',
+        'CALSCALE:GREGORIAN',
+        'METHOD:PUBLISH',
+        'X-WR-CALNAME:키즈노트 준비물·일정',
+        'X-WR-TIMEZONE:Asia/Seoul'
+      ];
+      const nowUtc = new Date().toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
+
+      Object.keys(grouped).sort().forEach(dStr => {
+        const g = grouped[dStr];
+        const dtStart = dStr.replace(/-/g, '');
+        const nextObj = new Date(dStr + 'T00:00:00');
+        nextObj.setDate(nextObj.getDate() + 1);
+        const dtEnd = nextObj.toISOString().slice(0, 10).replace(/-/g, '');
+        const mainTitle = Array.from(g.titles).slice(0, 2).join(', ') || '어린이집 일정';
+        const summary = `[키즈노트] ${mainTitle}`;
+        const desc = g.list.map(i => `[${i.category}] ${i.item_text}`).join('\\n');
+
+        lines.push(
+          'BEGIN:VEVENT',
+          `UID:kn-${dtStart}-${Math.abs(summary.length)}@kidsnote`,
+          `DTSTAMP:${nowUtc}`,
+          `DTSTART;VALUE=DATE:${dtStart}`,
+          `DTEND;VALUE=DATE:${dtEnd}`,
+          `SUMMARY:${summary}`,
+          `DESCRIPTION:${desc}`,
+          'BEGIN:VALARM',
+          'TRIGGER:-PT4H',
+          'ACTION:DISPLAY',
+          `DESCRIPTION:내일 ${summary} 준비물 확인!`,
+          'END:VALARM',
+          'BEGIN:VALARM',
+          'TRIGGER:PT7H30M',
+          'ACTION:DISPLAY',
+          `DESCRIPTION:오늘 ${summary} 확인!`,
+          'END:VALARM',
+          'END:VEVENT'
+        );
+      });
+
+      lines.push('END:VCALENDAR');
+      const blob = new Blob([lines.join('\r\n')], { type: 'text/calendar;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `kidsnote_${targetDate || 'all'}.ics`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    function openGoogleGalaxyCalendar(dateStr, title, items) {
+      const d = dateStr.replace(/-/g, '');
+      const nextObj = new Date(dateStr + 'T00:00:00');
+      nextObj.setDate(nextObj.getDate() + 1);
+      const nextD = nextObj.toISOString().slice(0, 10).replace(/-/g, '');
+      const summary = encodeURIComponent(`[키즈노트] ${title}`);
+      const details = encodeURIComponent(items.map(i => `[${i.category}] ${i.item_text}`).join('\n'));
+      window.open(`https://calendar.google.com/calendar/render?action=TEMPLATE&text=${summary}&dates=${d}/${nextD}&details=${details}`, '_blank');
+    }
+
+    function openNaverCalendar(dateStr, title, items) {
+      const copyText = `${dateStr} [키즈노트] ${title}\n` + items.map(i => `[${i.category}] ${i.item_text}`).join('\n');
+      navigator.clipboard.writeText(copyText).catch(() => {});
+      showToast('📋 일정 내용이 복사되었습니다! 네이버 캘린더에 붙여넣으세요.');
+      window.open('https://calendar.naver.com/', '_blank');
+    }
+
+    function renderChecklist() {
+      const container = document.getElementById('checklistContainer');
+      const checkedSet = getCheckedSet();
+      const deletedSet = getDeletedSet();
+      const todayStr = new Date().toLocaleDateString('sv-SE');
+
+      const allValid = (rawData.items || []).filter(it => !deletedSet.has(it.id));
+      const upcoming = allValid.filter(it => it.target_date >= todayStr);
+      const pastCount = allValid.length - upcoming.length;
+
+      const toggleBtn = document.getElementById('togglePastBtn');
+      if (toggleBtn) {
+        toggleBtn.textContent = showPast ? `🙈 지난 날짜 숨기기 (${pastCount}개)` : `🕰️ 지난 날짜도 보기 (${pastCount}개)`;
+      }
+
+      const items = showPast ? allValid : upcoming;
+      if (items.length === 0) {
+        container.innerHTML = `
+          <div class="card empty-box">
+            <div style="font-size:2.2rem; margin-bottom:8px;">🎒</div>
+            <h3 style="margin:0 0 6px; color:var(--text);">오늘 이후로 새로 챙겨야 할 항목이 없습니다!</h3>
+            <p style="margin:0 0 14px;">지난 날짜의 준비물·일정을 보시려면 <b>[🕰️ 지난 날짜도 보기]</b>를 눌러주세요.</p>
+            <button class="btn btn-outline" onclick="togglePast()">🕰️ 지난 날짜도 보기 (${pastCount}개)</button>
+          </div>
+        `;
+        return;
+      }
+
+      const grouped = {};
+      items.forEach(item => {
+        const d = item.target_date;
+        if (!grouped[d]) grouped[d] = { date_label: item.date_label || d, titles: new Set(), list: [] };
+        if (item.event_title) grouped[d].titles.add(item.event_title);
+        grouped[d].list.push(item);
+      });
+
+      const iconMap = {
+        '준비물': '🎒 준비물',
+        '복장': '👕 복장',
+        '해야할일': '✍️ 해야할일',
+        '행사': '🎈 행사'
+      };
+
+      let html = '';
+      Object.keys(grouped).sort().forEach(dateStr => {
+        const g = grouped[dateStr];
+        const mainTitle = Array.from(g.titles).slice(0, 2).join(', ') || '어린이집 일정';
+        const itemsJson = JSON.stringify(g.list).replace(/"/g, '&quot;');
+
+        html += `
+          <div class="date-group">
+            <div class="date-header">
+              <div class="date-title">
+                <span>📅 ${g.date_label}</span>
+                <span class="event-pill">${mainTitle}</span>
+              </div>
+              <div class="cal-actions">
+                <button class="btn btn-dark btn-sm" onclick="downloadIcs('${dateStr}')">📱 갤럭시 달력(.ics)</button>
+                <button class="btn btn-blue btn-sm" onclick="openGoogleGalaxyCalendar('${dateStr}', '${mainTitle.replace(/'/g, "")}', ${itemsJson})">📅 구글·갤럭시</button>
+                <button class="btn btn-green btn-sm" onclick="openNaverCalendar('${dateStr}', '${mainTitle.replace(/'/g, "")}', ${itemsJson})">🟢 네이버 달력</button>
+              </div>
+            </div>
+            <div class="check-list">
+        `;
+
+        g.list.forEach(item => {
+          const isChecked = checkedSet.has(item.id) || Boolean(item.is_checked);
+          const checkedClass = isChecked ? 'checked' : '';
+          const checkedAttr = isChecked ? 'checked' : '';
+          const badgeLabel = iconMap[item.category] || item.category;
+          html += `
+            <div class="check-item ${checkedClass}">
+              <label class="check-left">
+                <input type="checkbox" ${checkedAttr} onchange="toggleCheck(${item.id}, this.checked)" />
+                <span class="badge badge-${item.category}">${badgeLabel}</span>
+                <span class="item-text">${item.item_text}</span>
+              </label>
+              <button class="btn btn-outline btn-sm" onclick="hideItem(${item.id})" title="숨기기">✕</button>
+            </div>
+          `;
+        });
+
+        html += `</div></div>`;
+      });
+
+      container.innerHTML = html;
+    }
+
+    function renderPosts() {
+      const container = document.getElementById('postsContainer');
+      const posts = rawData.posts || [];
+      if (posts.length === 0) {
+        container.innerHTML = `<div class="card empty-box">동기화된 글이 없습니다.</div>`;
+        return;
+      }
+      container.innerHTML = posts.map(p => `
+        <div class="card">
+          <div style="display:flex; justify-content:space-between; margin-bottom:6px;">
+            <span class="event-pill">${p.source_type}</span>
+            <span style="font-size:0.84rem; color:var(--sub);">${p.post_date}</span>
+          </div>
+          <h3 style="margin:4px 0 8px; font-size:1.05rem;">${p.title}</h3>
+          <div style="background:#f8f9fc; padding:10px 14px; border-radius:10px; font-size:0.9rem; margin-bottom:10px;">
+            💡 <b>AI 핵심 요약:</b> ${p.summary || '요약 없음'}
+          </div>
+          <details style="font-size:0.86rem; color:var(--sub);">
+            <summary style="cursor:pointer; font-weight:700;">원본 글 전체 보기</summary>
+            <pre style="white-space:pre-wrap; font-family:inherit; margin-top:8px;">${p.content}</pre>
+          </details>
+        </div>
+      `).join('');
+    }
+
+    async function loadData(notify = false) {
+      try {
+        const res = await fetch('./kidsnote-data.json?t=' + Date.now());
+        rawData = await res.json();
+        document.getElementById('syncTimeText').textContent =
+          `✨ ${rawData.child_info || '키즈노트'} · 마지막 자동 업데이트: ${rawData.updated_at || '방금 전'}`;
+        renderChecklist();
+        renderPosts();
+        if (notify) showToast('✅ 최신 알림장·공지사항 데이터를 불러왔습니다!');
+      } catch (e) {
+        showToast('데이터를 불러오지 못했습니다.');
+      }
+    }
+
+    loadData();
+  </script>
+</body>
+</html>
