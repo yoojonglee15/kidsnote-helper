@@ -1,5 +1,5 @@
 // 앱 화면(셸)만 캐시하고, 키즈노트 최신 데이터(kidsnote-data.json)는 항상 네트워크에서 새로 받습니다.
-const CACHE = 'kn-shell-v3';
+const CACHE = 'kn-shell-v4';
 const SHELL = ['./', './index.html', './manifest.webmanifest', './icon.svg', './icon-192.png', './icon-512.png'];
 
 self.addEventListener('install', e => {
