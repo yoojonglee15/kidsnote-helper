@@ -14,7 +14,7 @@ from urllib.parse import urlparse, parse_qs
 
 import requests
 
-MOBILE_TUNNEL_URL = ""
+MOBILE_TUNNEL_URL = "https://yoojonglee15.github.io/kidsnote-helper/"
 
 
 def start_mobile_tunnel(port=8080):
