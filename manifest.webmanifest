@@ -1,11 +1,11 @@
 {
-  "name": "키즈노트 비서",
+  "name": "주원이 준비물 수첩 · 키즈노트 비서",
   "short_name": "키즈노트비서",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#f7f8fc",
-  "theme_color": "#ff7a00",
+  "background_color": "#FFFBF4",
+  "theme_color": "#FF7A2F",
   "lang": "ko",
   "icons": [
     {

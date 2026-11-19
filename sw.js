@@ -1,5 +1,5 @@
 // 앱 화면(셸)만 캐시하고, 키즈노트 최신 데이터(kidsnote-data.json)는 항상 네트워크에서 새로 받습니다.
-const CACHE = 'kn-shell-v2';
+const CACHE = 'kn-shell-v3';
 const SHELL = ['./', './index.html', './manifest.webmanifest', './icon.svg', './icon-192.png', './icon-512.png'];
 
 self.addEventListener('install', e => {
@@ -19,7 +19,6 @@ self.addEventListener('fetch', e => {
   if (e.request.method !== 'GET' || url.origin !== location.origin || url.pathname.endsWith('kidsnote-data.json')) {
     return;
   }
-  // 새 버전을 먼저 확인하고, 오프라인이면 캐시 사용
   e.respondWith(
     fetch(e.request).then(r => {
       const copy = r.clone();
