@@ -1,7 +1,42 @@
 {
-  "updated_at": "2026-11-20 12:42",
+  "updated_at": "2026-11-20 17:11",
   "child_info": "HelenDoron (2026 5yrs Honeybees)",
   "posts": [
+    {
+      "id": 23,
+      "external_id": "kn_알림장_1485757729",
+      "source_type": "알림장",
+      "title": "✅️ 세척을 위해 실내화를 가정으로 보내드립니다.",
+      "content": "✅️ 세척을 위해 실내화를 가정으로 보내드립니다.\n다음주 월요일에 다시 보내주세요!\n\n✅️ 12월에 진행되는 크리스마스 공연을 위한 개인 의상 준비물을 안내드립니다.\n💁‍♂️ 남자친구들 : 원복바지, 아이보리(크림색) 터틀넥\n💁‍♀️ 여자친구들 : 아이보리(크림색) 터틀넥, 흰 타이즈\n(머리띠, 보타이, 주름 스터트 등 공연 준비에 필요한 소품들은 원에서 준비합니다)\n\n🎄 크리스마스 공연 및 행사 일정\n- 공연 리허설 : 11월 23일(월) ~ 12월 4일(금) 중 하루\n- 공연 촬영 : 12월 7일(월) ~ 12월 17일(목) 중 하루\n- 원내 크리스마스 공연 및 산타 행사 : 12월 18일(금)\n* 위의 일정 기간 중 의상을 입고 등원해야 하는\n정확한 날짜는 다시 키즈노트로 안내드릴 예정이오니, \n의상 준비 부탁드립니다!\n\n✅️ <Start Right Reader book 4> 를 보내드립니다.\nStory Title 'Bob Tips a Pot' (p.29~34) 부분을 소리내어 3번 읽기연습을 합니다.\n책은 다음주 월요일에 다시 보내주세요!\n\n✅️ 다음주 월요일(11/23)부터 4분기 데이케어가 시작됩니다. \n변경된 차량시간표를 꼭 확인해주세요!\n\n✅️ 3분기 라즈키즈 점수 획득 기간은 이번주 일요일까지 입니다!\n* 목표 획득점수 : 3,500 점\n3분기에도 점수를 달성할 수 있도록 지도 부탁드립니다!\n\n✅️ 다음주 Morning Routine 시간에는 첸트북으로 수업이 진행됩니다! (Show&Tell 수업×)\n\nHave a great weekend 🩷",
+      "post_date": "2026-11-20",
+      "images": [],
+      "summary": "실내화 세척 및 영어 도서 읽기 숙제, 크리스마스 공연 의상 준비와 4분기 데이케어 시작에 따른 차량 시간표 확인 안내입니다.",
+      "created_at": "2026-11-20T08:11:04"
+    },
+    {
+      "id": 22,
+      "external_id": "kn_공지사항_74209544",
+      "source_type": "공지사항",
+      "title": "Early Literacy Homework 안내",
+      "content": "안녕하세요. 헬렌도론입니다.\n\n이번 주 Early Literacy Homework를 안내드립니다. \n업로드된 음원을 참고하여 주말 동안 이번 주에 배운 스토리를 소리 내어 3번씩 읽을 수 있도록 지도해 주시고, 월요일에 교재를 꼭 다시 보내주시기 바랍니다. 또한 음원을 듣지 않고 스스로 읽어 보는 연습도 함께 해 주시면 읽기 능력 향상에 큰 도움이 됩니다.\n\n학부모님의 격려와 지도 부탁드립니다.\n감사합니다. 😊\n\n이번 주 스토리: Bob Tips a Pot p. 29-34",
+      "post_date": "2026-11-20",
+      "images": [],
+      "summary": "주말 동안 Early Literacy 스토리(p.29-34)를 3번 소리 내어 읽고, 월요일에 교재를 원으로 보내주세요.",
+      "created_at": "2026-11-20T08:11:04"
+    },
+    {
+      "id": 21,
+      "external_id": "kn_공지사항_74230586",
+      "source_type": "공지사항",
+      "title": "11월 넷째 주 Weekly Notice입니다.",
+      "content": "11월 넷째 주 Weekly Notice입니다.",
+      "post_date": "2026-11-20",
+      "images": [
+        "https://up-kids-kage.kakao.com/dn/D0w09/dJMcahtipVh/lLLt5d77lXiX78Bh0bfjhk/img.png"
+      ],
+      "summary": "11월 넷째 주 주요 일정으로 전화 상담, SR 테스트, 크리스마스 영상 촬영 및 선물 준비 안내가 포함되어 있습니다.",
+      "created_at": "2026-11-20T08:11:04"
+    },
     {
       "id": 3,
       "external_id": "kn_알림장_1484792268",
@@ -664,6 +699,42 @@
       "created_at": "2026-11-19T18:08:36"
     },
     {
+      "id": 38,
+      "post_id": 21,
+      "target_date": "2026-11-20",
+      "date_label": "11월 20일 (금)",
+      "event_title": "개인 소지품 등원 금지",
+      "category": "해야할일",
+      "item_text": "개인 장난감 지참 금지",
+      "detail": "안전을 위해 장난감, 캐릭터 카드 등 개인 소지품을 원이나 셔틀버스에 가져오지 않도록 지도 바랍니다.",
+      "contacts": [
+        {
+          "name": "헬렌도론 원 대표번호",
+          "phone": "031-613-1062"
+        }
+      ],
+      "is_checked": 0,
+      "created_at": "2026-11-20T08:11:04"
+    },
+    {
+      "id": 48,
+      "post_id": 22,
+      "target_date": "2026-11-21",
+      "date_label": "11월 21일 (토)",
+      "event_title": "Early Literacy 숙제",
+      "category": "해야할일",
+      "item_text": "스토리 3번 소리 내어 읽기",
+      "detail": "Bob Tips a Pot p. 29-34 (음원 참고 및 스스로 읽기 연습)",
+      "contacts": [
+        {
+          "name": "원 대표전화",
+          "phone": "031-613-1062"
+        }
+      ],
+      "is_checked": 0,
+      "created_at": "2026-11-20T08:11:04"
+    },
+    {
       "id": 4,
       "post_id": 3,
       "target_date": "2026-11-22",
@@ -698,6 +769,24 @@
       ],
       "is_checked": 0,
       "created_at": "2026-11-19T18:08:36"
+    },
+    {
+      "id": 39,
+      "post_id": 21,
+      "target_date": "2026-11-22",
+      "date_label": "11월 22일 (일)",
+      "event_title": "독서 및 Kids A-Z 마감",
+      "category": "해야할일",
+      "item_text": "3분기 독서 점수 마감",
+      "detail": "Reading Certificate 및 Kids A-Z(RAZ-KIDS) 점수 획득 기간이 일요일에 종료됩니다.",
+      "contacts": [
+        {
+          "name": "헬렌도론 원 대표번호",
+          "phone": "031-613-1062"
+        }
+      ],
+      "is_checked": 0,
+      "created_at": "2026-11-20T08:11:04"
     },
     {
       "id": 6,
@@ -775,6 +864,86 @@
       "created_at": "2026-11-19T18:08:36"
     },
     {
+      "id": 49,
+      "post_id": 22,
+      "target_date": "2026-11-23",
+      "date_label": "11월 23일 (월)",
+      "event_title": "교재 지참",
+      "category": "준비물",
+      "item_text": "Early Literacy 교재 보내기",
+      "detail": "이번 주 배운 교재(Bob Tips a Pot) 원으로 다시 보내기",
+      "contacts": [
+        {
+          "name": "원 대표전화",
+          "phone": "031-613-1062"
+        }
+      ],
+      "is_checked": 0,
+      "created_at": "2026-11-20T08:11:04"
+    },
+    {
+      "id": 50,
+      "post_id": 23,
+      "target_date": "2026-11-23",
+      "date_label": "11월 23일 (월)",
+      "event_title": "실내화 반납",
+      "category": "준비물",
+      "item_text": "세척한 실내화 보내기",
+      "detail": "가정에서 세척한 실내화를 월요일 등원 시 다시 보냅니다.",
+      "contacts": [
+        {
+          "name": "원 대표전화",
+          "phone": "031-613-1062"
+        }
+      ],
+      "is_checked": 0,
+      "created_at": "2026-11-20T08:11:04"
+    },
+    {
+      "id": 51,
+      "post_id": 23,
+      "target_date": "2026-11-23",
+      "date_label": "11월 23일 (월)",
+      "event_title": "영어 읽기 숙제",
+      "category": "해야할일",
+      "item_text": "영어 도서 읽기 및 반납",
+      "detail": "Start Right Reader book 4 (p.29~34) 3번 소리내어 읽기 및 월요일 책 반납",
+      "contacts": [],
+      "is_checked": 0,
+      "created_at": "2026-11-20T08:11:04"
+    },
+    {
+      "id": 52,
+      "post_id": 23,
+      "target_date": "2026-11-23",
+      "date_label": "11월 23일 (월)",
+      "event_title": "4분기 데이케어 시작",
+      "category": "행사",
+      "item_text": "변경 차량시간표 확인",
+      "detail": "4분기 데이케어 시작으로 변경된 차량 시간표를 반드시 확인해 주세요.",
+      "contacts": [
+        {
+          "name": "원 대표전화",
+          "phone": "031-613-1062"
+        }
+      ],
+      "is_checked": 0,
+      "created_at": "2026-11-20T08:11:04"
+    },
+    {
+      "id": 53,
+      "post_id": 23,
+      "target_date": "2026-11-23",
+      "date_label": "11월 23일 (월)",
+      "event_title": "Morning Routine 수업",
+      "category": "준비물",
+      "item_text": "첸트북 준비 (S&T 없음)",
+      "detail": "다음 주 모닝 루틴은 첸트북으로 진행되며 Show&Tell 수업은 없습니다.",
+      "contacts": [],
+      "is_checked": 0,
+      "created_at": "2026-11-20T08:11:04"
+    },
+    {
       "id": 8,
       "post_id": 6,
       "target_date": "2026-11-24",
@@ -804,6 +973,24 @@
       "contacts": [],
       "is_checked": 0,
       "created_at": "2026-11-19T18:08:36"
+    },
+    {
+      "id": 40,
+      "post_id": 21,
+      "target_date": "2026-11-24",
+      "date_label": "11월 24일 (화)",
+      "event_title": "SR Test (Flamingos)",
+      "category": "행사",
+      "item_text": "Flamingos반 SR 테스트",
+      "detail": "6, 7세 대상 SR Test가 진행됩니다.",
+      "contacts": [
+        {
+          "name": "헬렌도론 원 대표번호",
+          "phone": "031-613-1062"
+        }
+      ],
+      "is_checked": 0,
+      "created_at": "2026-11-20T08:11:04"
     },
     {
       "id": 3,
@@ -837,6 +1024,96 @@
       "created_at": "2026-11-19T18:08:36"
     },
     {
+      "id": 41,
+      "post_id": 21,
+      "target_date": "2026-12-07",
+      "date_label": "12월 7일 (월)",
+      "event_title": "크리스마스 영상 촬영",
+      "category": "행사",
+      "item_text": "반별 영상 촬영 시작",
+      "detail": "12/7(월)~12/11(금) 기간 동안 촬영하며, 의상 등 세부 사항은 담임 선생님이 별도 안내 예정입니다.",
+      "contacts": [
+        {
+          "name": "헬렌도론 원 대표번호",
+          "phone": "031-613-1062"
+        }
+      ],
+      "is_checked": 0,
+      "created_at": "2026-11-20T08:11:04"
+    },
+    {
+      "id": 42,
+      "post_id": 21,
+      "target_date": "2026-12-09",
+      "date_label": "12월 9일 (수)",
+      "event_title": "크리스마스 선물 준비",
+      "category": "준비물",
+      "item_text": "산타 선물 및 카드 제출",
+      "detail": "A4 사이즈 선물과 산타 카드를 12/9(수)~12/11(금)까지 원으로 보내주세요.",
+      "contacts": [
+        {
+          "name": "헬렌도론 원 대표번호",
+          "phone": "031-613-1062"
+        }
+      ],
+      "is_checked": 0,
+      "created_at": "2026-11-20T08:11:04"
+    },
+    {
+      "id": 43,
+      "post_id": 21,
+      "target_date": "2026-12-15",
+      "date_label": "12월 15일 (화)",
+      "event_title": "단체 영상 촬영 (4,5세)",
+      "category": "복장",
+      "item_text": "4, 5세 단체 촬영 복장",
+      "detail": "원복 착용 (플리스 재킷, PK 긴팔 티셔츠, 니트 조끼, 치마 또는 바지)",
+      "contacts": [
+        {
+          "name": "헬렌도론 원 대표번호",
+          "phone": "031-613-1062"
+        }
+      ],
+      "is_checked": 0,
+      "created_at": "2026-11-20T08:11:04"
+    },
+    {
+      "id": 44,
+      "post_id": 21,
+      "target_date": "2026-12-16",
+      "date_label": "12월 16일 (수)",
+      "event_title": "단체 영상 촬영 (6,7세)",
+      "category": "복장",
+      "item_text": "6, 7세 단체 촬영 복장",
+      "detail": "원복 착용 (플리스 재킷, PK 긴팔 티셔츠, 니트 조끼, 치마 또는 바지)",
+      "contacts": [
+        {
+          "name": "헬렌도론 원 대표번호",
+          "phone": "031-613-1062"
+        }
+      ],
+      "is_checked": 0,
+      "created_at": "2026-11-20T08:11:04"
+    },
+    {
+      "id": 45,
+      "post_id": 21,
+      "target_date": "2026-12-17",
+      "date_label": "12월 17일 (목)",
+      "event_title": "12월 생일 파티",
+      "category": "행사",
+      "item_text": "원내 생일 파티 진행",
+      "detail": "10:00~11:50 진행되며, 답례품 및 별도의 음식은 받지 않습니다.",
+      "contacts": [
+        {
+          "name": "헬렌도론 원 대표번호",
+          "phone": "031-613-1062"
+        }
+      ],
+      "is_checked": 0,
+      "created_at": "2026-11-20T08:11:04"
+    },
+    {
       "id": 34,
       "post_id": 16,
       "target_date": "2026-12-18",
@@ -848,6 +1125,55 @@
       "contacts": [],
       "is_checked": 0,
       "created_at": "2026-11-19T18:08:36"
+    },
+    {
+      "id": 46,
+      "post_id": 21,
+      "target_date": "2026-12-18",
+      "date_label": "12월 18일 (금)",
+      "event_title": "Christmas Concert",
+      "category": "행사",
+      "item_text": "크리스마스 콘서트 및 파티",
+      "detail": "원내에서 진행되며 장소가 협소하여 학부모님은 초대하지 않습니다.",
+      "contacts": [
+        {
+          "name": "헬렌도론 원 대표번호",
+          "phone": "031-613-1062"
+        }
+      ],
+      "is_checked": 0,
+      "created_at": "2026-11-20T08:11:04"
+    },
+    {
+      "id": 54,
+      "post_id": 23,
+      "target_date": "2026-12-18",
+      "date_label": "12월 18일 (금)",
+      "event_title": "크리스마스 공연 의상 준비",
+      "category": "복장",
+      "item_text": "공연 개인 의상 준비",
+      "detail": "남: 원복바지, 아이보리 터틀넥 / 여: 아이보리 터틀넥, 흰 타이즈 (착용일 추후 공지)",
+      "contacts": [],
+      "is_checked": 0,
+      "created_at": "2026-11-20T08:11:04"
+    },
+    {
+      "id": 47,
+      "post_id": 21,
+      "target_date": "2026-12-23",
+      "date_label": "12월 23일 (수)",
+      "event_title": "겨울 방학 시작",
+      "category": "행사",
+      "item_text": "Winter Break (휴원)",
+      "detail": "12/23(수)부터 2027/1/5(화)까지 겨울 방학이며, 1/6(수)에 등원합니다.",
+      "contacts": [
+        {
+          "name": "헬렌도론 원 대표번호",
+          "phone": "031-613-1062"
+        }
+      ],
+      "is_checked": 0,
+      "created_at": "2026-11-20T08:11:04"
     }
   ],
   "center_phone": "031-613-1062"
