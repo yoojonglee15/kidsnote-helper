@@ -1,7 +1,18 @@
 {
-  "updated_at": "2026-11-23 12:50",
+  "updated_at": "2026-11-23 17:21",
   "child_info": "HelenDoron (2026 5yrs Honeybees)",
   "posts": [
+    {
+      "id": 25,
+      "external_id": "kn_알림장_1486572855",
+      "source_type": "알림장",
+      "title": "✅️ 내일은 Library 수업이 있는 날입니다.",
+      "content": "✅️ 내일은 Library 수업이 있는 날입니다.\n대여해드린 도서 5권을 챙겨서 보내주세요!\n\n✅️ 학습이 완료된 첸트북 2권을 가정으로 보내드립니다.\n확인해주세요!\n\n✅️ 12/28(금)요일에는 Christmas Concert & Party 이벤트가 진행될 예정입니다.\n자세한 내용은 추후 재공지될 예정입니다.\n\n✅️ 겨울방학은 12/23(수) ~ 1/5(화) 까지입니다.\n\n\n🐝 literacy\n'Magic e'\n_ate, _ave 의 단어들을 익혀보았어요.\n(date, gate, cave, wave)\n단어와 그림을 일치시키는 게임을 해보았어요.\n링던지기 게임을 하며 단어 읽기 연습을 해보았어요.\n\n🐝 English Numeracy\n3D shapes\n3d shapes의 이름을 익히고, flashcards를 보며 이름 맞추기 게임을 해보았어요.\n각 3d shape의 Faces, sides, vertices 을 말해보았어요.\nA cube has six faces.\nA cube has six sides.\nA cube has eight vertices.\n\n🐝 ETM\nYoga 동작들을 배워보았어요.\n\n편안한 저녁 시간 보내세요 💕",
+      "post_date": "2026-11-23",
+      "images": [],
+      "summary": "내일 Library 수업을 위한 대여 도서 5권 반납과 오늘 전달된 첸트북 확인이 필요하며, 12월 말 크리스마스 행사 및 겨울방학 일정을 안내드립니다.",
+      "created_at": "2026-11-23T08:20:59"
+    },
     {
       "id": 24,
       "external_id": "kn_공지사항_74272695",
@@ -975,6 +986,24 @@
       "created_at": "2026-11-23T03:50:19"
     },
     {
+      "id": 56,
+      "post_id": 25,
+      "target_date": "2026-11-23",
+      "date_label": "11월 23일 (월)",
+      "event_title": "첸트북 학습 완료",
+      "category": "해야할일",
+      "item_text": "완료된 첸트북 2권 확인",
+      "detail": "학습이 완료되어 가정으로 보내드린 첸트북 2권을 확인해 주세요.",
+      "contacts": [
+        {
+          "name": "원 대표번호",
+          "phone": "031-613-1062"
+        }
+      ],
+      "is_checked": 0,
+      "created_at": "2026-11-23T08:20:59"
+    },
+    {
       "id": 8,
       "post_id": 6,
       "target_date": "2026-11-24",
@@ -1022,6 +1051,24 @@
       ],
       "is_checked": 0,
       "created_at": "2026-11-20T08:11:04"
+    },
+    {
+      "id": 57,
+      "post_id": 25,
+      "target_date": "2026-11-24",
+      "date_label": "11월 24일 (화)",
+      "event_title": "Library 수업",
+      "category": "준비물",
+      "item_text": "대여 도서 5권 반납",
+      "detail": "Library 수업을 위해 대여했던 도서 5권을 챙겨서 보내주세요.",
+      "contacts": [
+        {
+          "name": "원 대표번호",
+          "phone": "031-613-1062"
+        }
+      ],
+      "is_checked": 0,
+      "created_at": "2026-11-23T08:20:59"
     },
     {
       "id": 3,
@@ -1205,6 +1252,42 @@
       ],
       "is_checked": 0,
       "created_at": "2026-11-20T08:11:04"
+    },
+    {
+      "id": 58,
+      "post_id": 25,
+      "target_date": "2026-12-23",
+      "date_label": "12월 23일 (수)",
+      "event_title": "겨울방학",
+      "category": "행사",
+      "item_text": "겨울방학 시작",
+      "detail": "방학 기간: 2026년 12월 23일(수) ~ 2027년 1월 5일(화)",
+      "contacts": [
+        {
+          "name": "원 대표번호",
+          "phone": "031-613-1062"
+        }
+      ],
+      "is_checked": 0,
+      "created_at": "2026-11-23T08:20:59"
+    },
+    {
+      "id": 59,
+      "post_id": 25,
+      "target_date": "2026-12-28",
+      "date_label": "12월 28일 (월)",
+      "event_title": "Christmas Concert & Party",
+      "category": "행사",
+      "item_text": "크리스마스 콘서트 및 파티",
+      "detail": "이벤트 진행 예정 (자세한 내용은 추후 재공지)",
+      "contacts": [
+        {
+          "name": "원 대표번호",
+          "phone": "031-613-1062"
+        }
+      ],
+      "is_checked": 0,
+      "created_at": "2026-11-23T08:20:59"
     }
   ],
   "center_phone": "031-613-1062"
