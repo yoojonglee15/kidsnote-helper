@@ -1,7 +1,20 @@
 {
-  "updated_at": "2026-11-23 08:32",
+  "updated_at": "2026-11-23 12:50",
   "child_info": "HelenDoron (2026 5yrs Honeybees)",
   "posts": [
+    {
+      "id": 24,
+      "external_id": "kn_공지사항_74272695",
+      "source_type": "공지사항",
+      "title": "4분기 Daycare 시작일 안내",
+      "content": "4분기 Daycare 시작일 안내",
+      "post_date": "2026-11-23",
+      "images": [
+        "https://up-kids-kage.kakao.com/dn/bAjk68/dJMcacFyeR6/zA26PdeoSnBZFgPwSkhQNk/img.png"
+      ],
+      "summary": "2026년 11월 23일부터 2027년 2월 26일까지 4분기 Daycare가 시작됨에 따라 하원 일정을 확인해 주시기 바랍니다.",
+      "created_at": "2026-11-23T03:50:19"
+    },
     {
       "id": 23,
       "external_id": "kn_알림장_1485757729",
@@ -942,6 +955,24 @@
       "contacts": [],
       "is_checked": 0,
       "created_at": "2026-11-20T08:11:04"
+    },
+    {
+      "id": 55,
+      "post_id": 24,
+      "target_date": "2026-11-23",
+      "date_label": "11월 23일 (월)",
+      "event_title": "4분기 Daycare 시작",
+      "category": "행사",
+      "item_text": "4분기 Daycare 및 하원 일정 확인",
+      "detail": "운영 기간: 2026년 11월 23일(월) ~ 2027년 2월 26일(금)",
+      "contacts": [
+        {
+          "name": "원 대표번호",
+          "phone": "031-613-1062"
+        }
+      ],
+      "is_checked": 0,
+      "created_at": "2026-11-23T03:50:19"
     },
     {
       "id": 8,
