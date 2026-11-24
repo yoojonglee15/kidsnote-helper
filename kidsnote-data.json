@@ -1,7 +1,31 @@
 {
-  "updated_at": "2026-11-24 12:48",
+  "updated_at": "2026-11-24 17:20",
   "child_info": "HelenDoron (2026 5yrs Honeybees)",
   "posts": [
+    {
+      "id": 27,
+      "external_id": "kn_알림장_1487155643",
+      "source_type": "알림장",
+      "title": "오늘은 3분기 동안 라즈키즈 학습을 열심히 해준 ",
+      "content": "오늘은 3분기 동안 라즈키즈 학습을 열심히 해준 \n우리 Joowon에게 헬렌도론에서 준비한 certificate 와 선물 시상이 있었습니다  🎁\n그 동안 열심히 노력해준 우리 Joowon에게 진심어린 박수를 보냅니다 👏👏👏\n앞으로도 꾸준히 할 수 있도록 가정에서 많은 지도 부탁드립니다 💗",
+      "post_date": "2026-11-24",
+      "images": [
+        "https://up-kids-kage.kakao.com/dn/cdH62n/dJMcaiy1Brt/k3KWqilfFBOCO6pNm8GGsk/img.jpg"
+      ],
+      "summary": "주원이가 3분기 라즈키즈 학습 우수자로 선정되어 상장과 선물을 받았습니다. 가정에서도 꾸준한 학습이 이어지도록 격려와 지도 부탁드립니다.",
+      "created_at": "2026-11-24T08:20:28"
+    },
+    {
+      "id": 26,
+      "external_id": "kn_알림장_1487400012",
+      "source_type": "알림장",
+      "title": "✅️ 오늘 새로운 도서 5권을 가정으로 보내드립니다.",
+      "content": "✅️ 오늘 새로운 도서 5권을 가정으로 보내드립니다.\n일주일동안 부모님께서 많이 읽어주시고 다음주 화요일에 보내주세요!\n\n✅️ 내일은 수영수업이 있는 날입니다.\n수영복과 수건을 챙겨서 보내주세요!\n\n✅️ 숙제가 완료된 Go far with phonics Tracing Homework Book 3를 내일 보내주세요!\n\n\n🐝 Speaking\n'change into' 표현을 익혀보았어요.\n_____ change into a fairy!\n_____ change into a witch!\nTally 와 Harry의 그림을 보고 선생님의 질문에 답해보았어요.\nWho are they?\nWhat are Tally and Harry doing?\nWho is faster?\n밖으로 나가, up the hill! / Down the hill!의 문장을 익히고 동작으로 표현해 보았어요.\n\n🐝 Story Sprout\n'Bear Hunt 🐻' 의 책을 다 같이 읽어보고, \nflashcards로 단어들과 문장들을 익혀보았어요.\n'Magic pencil' 만들기 activity를 해보았어요.\n\n🐝 Literacy\n'Magic e'\n_ate, _ave의 단어들을 익혀보았어요.\n두 팀으로 나누어 단어를 빨리 읽고 점수를 얻는 게임을 해보았어요.\n\n🐝 Library\n오늘은 선생님께서 'I am a Tiger🐯' 라는 책을 읽어주셨어요.\n재미있게 이야기를 듣고, 친구들과함께 여러권의 그림책을 자유롭게 읽어보았어요 📖\n\n🐝 Hands On Expression\n- SNIPPY RAINBOW 🌈\n\n편안한 저녁시간 보내세요 🩷",
+      "post_date": "2026-11-24",
+      "images": [],
+      "summary": "내일(25일) 수영 수업 준비물과 파닉스 숙제 교재를 챙겨주시고, 오늘 배부된 도서 5권은 다음 주 화요일(12월 1일)까지 반납해 주세요.",
+      "created_at": "2026-11-24T08:20:28"
+    },
     {
       "id": 25,
       "external_id": "kn_알림장_1486572855",
@@ -1071,6 +1095,42 @@
       "created_at": "2026-11-23T08:20:59"
     },
     {
+      "id": 63,
+      "post_id": 27,
+      "target_date": "2026-11-24",
+      "date_label": "11월 24일 (화)",
+      "event_title": "라즈키즈 3분기 시상",
+      "category": "행사",
+      "item_text": "라즈키즈 상장 및 선물 수령",
+      "detail": "3분기 동안 열심히 학습하여 헬렌도론 상장(Certificate)과 선물을 받았습니다.",
+      "contacts": [
+        {
+          "name": "원 대표전화",
+          "phone": "031-613-1062"
+        }
+      ],
+      "is_checked": 0,
+      "created_at": "2026-11-24T08:20:28"
+    },
+    {
+      "id": 64,
+      "post_id": 27,
+      "target_date": "2026-11-24",
+      "date_label": "11월 24일 (화)",
+      "event_title": "라즈키즈 학습 지도",
+      "category": "해야할일",
+      "item_text": "가정 내 꾸준한 학습 지도",
+      "detail": "앞으로도 꾸준히 라즈키즈 학습을 할 수 있도록 가정에서 많은 관심과 지도 부탁드립니다.",
+      "contacts": [
+        {
+          "name": "원 대표전화",
+          "phone": "031-613-1062"
+        }
+      ],
+      "is_checked": 0,
+      "created_at": "2026-11-24T08:20:28"
+    },
+    {
       "id": 3,
       "post_id": 2,
       "target_date": "2026-11-25",
@@ -1087,6 +1147,60 @@
       ],
       "is_checked": 0,
       "created_at": "2026-11-19T18:08:36"
+    },
+    {
+      "id": 60,
+      "post_id": 26,
+      "target_date": "2026-11-25",
+      "date_label": "11월 25일 (수)",
+      "event_title": "수영 수업",
+      "category": "준비물",
+      "item_text": "수영복 및 수건 챙기기",
+      "detail": "내일 수영 수업을 위해 수영복과 수건을 준비하여 보내주세요.",
+      "contacts": [
+        {
+          "name": "원 대표전화",
+          "phone": "031-613-1062"
+        }
+      ],
+      "is_checked": 0,
+      "created_at": "2026-11-24T08:20:28"
+    },
+    {
+      "id": 61,
+      "post_id": 26,
+      "target_date": "2026-11-25",
+      "date_label": "11월 25일 (수)",
+      "event_title": "숙제 제출",
+      "category": "해야할일",
+      "item_text": "파닉스 숙제 교재 제출",
+      "detail": "완료된 Go far with phonics Tracing Homework Book 3를 원으로 보내주세요.",
+      "contacts": [
+        {
+          "name": "원 대표전화",
+          "phone": "031-613-1062"
+        }
+      ],
+      "is_checked": 0,
+      "created_at": "2026-11-24T08:20:28"
+    },
+    {
+      "id": 62,
+      "post_id": 26,
+      "target_date": "2026-12-01",
+      "date_label": "12월 1일 (화)",
+      "event_title": "도서 반납",
+      "category": "해야할일",
+      "item_text": "대여 도서 5권 반납",
+      "detail": "오늘(24일) 배부된 도서 5권을 일주일 동안 읽은 후 다음 주 화요일에 보내주세요.",
+      "contacts": [
+        {
+          "name": "원 대표전화",
+          "phone": "031-613-1062"
+        }
+      ],
+      "is_checked": 0,
+      "created_at": "2026-11-24T08:20:28"
     },
     {
       "id": 33,
