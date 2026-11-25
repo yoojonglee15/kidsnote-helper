@@ -1,7 +1,20 @@
 {
-  "updated_at": "2026-11-25 08:39",
+  "updated_at": "2026-11-25 12:51",
   "child_info": "HelenDoron (2026 5yrs Honeybees)",
   "posts": [
+    {
+      "id": 28,
+      "external_id": "kn_공지사항_74317802",
+      "source_type": "공지사항",
+      "title": "[재공지] 아동 성폭력 예방교육 안내",
+      "content": "안녕하세요, 헬렌도론입니다.\n\n아이들이 자신의 몸을 소중히 여기고, 스스로를 안전하게 보호하는 방법을 배우는 것은 건강한 성장에 있어 매우 중요한 과정입니다.\n\n이에 헬렌도론에서는 아이들이 자신의 몸에 대한 소중함을 알고, 올바른 신체 경계와 자기 보호 방법을 자연스럽게 익힐 수 있도록 아동 성폭력 예방교육을 진행하고자 합니다.\n\n이번 교육은 전문 강사님이 원에 직접 방문하여 아이들의 눈높이에 맞춘 인형극과 다양한 활동을 통해 진행할 예정입니다. 내 몸의 소중함과 신체 경계에 대해 알아보고, 원하지 않는 상황에서 자신의 의사를 표현하는 방법과 위험한 상황에 처했을 때 도움을 요청하는 방법 등을 배워보는 시간을 가질 예정입니다.\n\n이번 교육이 아이들이 자신을 더욱 소중히 여기고, 일상생활 속에서 스스로를 안전하게 지켜나가는 데 도움이 되는 의미 있는 시간이 되기를 바랍니다. 감사합니다.\n\n\n■ 교육 주제\n아동 성폭력 예방교육 「소중한 나를 위해 약속해요」\n\n■ 교육 일정\n\n<11월 26일 목요일>\n1차: Owls, Honeybees, Dolphins\n2차: Flamingos, Wallabies\n\n<12월 2일 수요일>\n1차: Ducks, Koalas, Pandas\n2차: Sea Stars, Cats, Butterflies\n\n<12월 3일 목요일>\n1차: Giraffes, Zebras, Belugas\n2차: Squirrels, Orcas\n\n\n■ 교육 시간\n회차별 약 30분\n\n\n■ 교육 내용\n\n-내 몸의 정확한 명칭과 각 부분의 역할 알아보기\n-인형극을 통해 배우는 신체 경계와 서로 존중하는 방법\n-원하지 않는 상황에서 자신의 의사를 표현하는 방법\n-위험한 상황에서 대처하고 주변 어른에게 도움을 요청하는 방법",
+      "post_date": "2026-11-25",
+      "images": [
+        "https://up-kids-kage.kakao.com/dn/mFiOy/dJMcagVo2zR/T0o7UTFkb7EK2htOl2JHr1/img.png"
+      ],
+      "summary": "전문 강사 초빙 아동 성폭력 예방교육 '소중한 나를 위해 약속해요'가 인형극 및 활동 중심으로 반별 일정에 맞춰 진행됩니다.",
+      "created_at": "2026-11-25T03:51:32"
+    },
     {
       "id": 27,
       "external_id": "kn_알림장_1487155643",
@@ -1185,6 +1198,24 @@
       "created_at": "2026-11-24T08:20:28"
     },
     {
+      "id": 65,
+      "post_id": 28,
+      "target_date": "2026-11-26",
+      "date_label": "11월 26일 (목)",
+      "event_title": "아동 성폭력 예방교육",
+      "category": "행사",
+      "item_text": "성폭력 예방교육 (1일차)",
+      "detail": "대상: Owls, Honeybees, Dolphins, Flamingos, Wallabies (회차별 30분)",
+      "contacts": [
+        {
+          "name": "헬렌도론 대표전화",
+          "phone": "031-613-1062"
+        }
+      ],
+      "is_checked": 0,
+      "created_at": "2026-11-25T03:51:32"
+    },
+    {
       "id": 62,
       "post_id": 26,
       "target_date": "2026-12-01",
@@ -1201,6 +1232,42 @@
       ],
       "is_checked": 0,
       "created_at": "2026-11-24T08:20:28"
+    },
+    {
+      "id": 66,
+      "post_id": 28,
+      "target_date": "2026-12-02",
+      "date_label": "12월 2일 (수)",
+      "event_title": "아동 성폭력 예방교육",
+      "category": "행사",
+      "item_text": "성폭력 예방교육 (2일차)",
+      "detail": "대상: Ducks, Koalas, Pandas, Sea Stars, Cats, Butterflies (회차별 30분)",
+      "contacts": [
+        {
+          "name": "헬렌도론 대표전화",
+          "phone": "031-613-1062"
+        }
+      ],
+      "is_checked": 0,
+      "created_at": "2026-11-25T03:51:32"
+    },
+    {
+      "id": 67,
+      "post_id": 28,
+      "target_date": "2026-12-03",
+      "date_label": "12월 3일 (목)",
+      "event_title": "아동 성폭력 예방교육",
+      "category": "행사",
+      "item_text": "성폭력 예방교육 (3일차)",
+      "detail": "대상: Giraffes, Zebras, Belugas, Squirrels, Orcas (회차별 30분)",
+      "contacts": [
+        {
+          "name": "헬렌도론 대표전화",
+          "phone": "031-613-1062"
+        }
+      ],
+      "is_checked": 0,
+      "created_at": "2026-11-25T03:51:32"
     },
     {
       "id": 33,
